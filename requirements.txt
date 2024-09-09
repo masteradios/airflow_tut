@@ -1,0 +1,8 @@
+kafka-python
+pyspark
+spark
+pandas
+numpy
+matplotlib
+cassandra-driver
+dash
