@@ -13,25 +13,3 @@ RUN pip3 install apache-airflow-providers-apache-spark apache-airflow-providers-
 RUN apt-get update && \
     apt-get install -y gcc python3-dev openjdk-17-jdk && \
     apt-get clean
-
-# # Set JAVA_HOME environment variable
-# #ENV JAVA_HOME /usr/lib/jvm/java-17-openjdk-amd64
-
-# # Set Airflow UID for proper permissions
-# ENV AIRFLOW_UID=1000
-
-# # Copy DAGs and plugins into the container
-# COPY ./dags /opt/airflow/dags
-# COPY ./plugins /opt/airflow/plugins
-
-# # Initialize the Airflow database
-# RUN airflow db init
-
-# # Create an Airflow admin user
-# RUN airflow users create \
-#   --username admin \
-#   --firstname admin \
-#   --lastname admin \
-#   --role Admin \
-#   --email admin@example.com \
-#   --password admin
