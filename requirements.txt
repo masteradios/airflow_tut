@@ -4,5 +4,3 @@ spark
 pandas
 numpy
 matplotlib
-cassandra-driver
-dash
